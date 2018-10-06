@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Test_1</title>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <form action="#">
+      <div class="left-col">
+        <div class="upper-buttons row">
+          <div class="col-xs-6 grid-element">
+            <input id="copie-noir" type="radio" class="radio-button" name="type" value="copie-noir" hidden>
+            <label for="copie-noir" class="btn btn-default">COPIE NOIR</label>
+          </div>
+          <div class="col-xs-6 grid-element">
+            <input id="copie-couleur" type="radio" class="radio-button" name="type" value="copie-couleur" hidden>
+            <label for="copie-couleur" class="btn btn-default">COPIE COULEUR</label>
+          </div>
+        </div>
+        <div class="recto-grid">
+          <div class="row">
+            <div class="col-xs-6 grid-element">
+              <input id='1-1' class='radio-button' type='radio' name='print-side' value='1-1' hidden>
+              <label for='1-1' class="btn btn-default">
+                <p>1>1</p>
+                <span>Recto > Recto</span>
+              </label>
+            </div>
+            <div class="col-xs-6 grid-element">
+              <input id='1-2' class='radio-button' type='radio' name='print-side' value='1-2' hidden>
+              <label for='1-2' class="btn btn-default">
+                <p>1>2</p>
+                <span>Recto > Recto/verso</span>
+              </label>
+            </div>
+            <div class="col-xs-6 grid-element">
+              <input id='2-2' class='radio-button' type='radio' name='print-side' value='2-2' hidden>
+              <label for='2-2' class="btn btn-default">
+                <p>2>2</p>
+                <span>Recto/verso > Recto/verso</span>
+              </label>
+            </div>
+            <div class="col-xs-6 grid-element">
+              <input id='2-1' class='radio-button' type='radio' name='print-side' value='2-1' hidden>
+              <label for='2-1' class="btn btn-default">
+                <p>2>1</p>
+                <span>Recto/verso > Recto</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="format-grid">
+          <div class="row">
+            <div class="col-xs-6 grid-element">
+              <input id='format-A4' class='radio-button' type='radio' name='format' value='A4' hidden>
+              <label for="format-A4" class="btn btn-default">
+                FORMAT SORTIE A4
+              </label>
+            </div>
+            <div class="col-xs-6 grid-element">
+              <input id='format-A3' class='radio-button' type='radio' name='format' value='A3' hidden>
+              <label for="format-A3" class="btn btn-default">
+                FORMAT SORTIE A3
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="progress-bar-grid">
+          <div class="row">
+            <div class="col-xs-6 grid-element">
+              <input type="number" name="luminosite" value='0' hidden>
+              <span>Luminosite</span>
+              <div class="progress-bar">
+                <div class='progress-line'></div>
+              </div>
+              <div class="progress-bar-btns">
+                <button type="button" class="btn btn-default minus">-</button>
+                <button type="button" class="btn btn-default plus">+</button>
+              </div>
+            </div>
+            <div class="col-xs-6 grid-element">
+              <input type="number" name="densite" value='0' hidden>
+              <span>Densite</span>
+              <div class="progress-bar">
+                <div class='progress-line'></div>
+              </div>
+              <div class="progress-bar-btns">
+                <button type="button" class="btn btn-default minus">-</button>
+                <button type="button" class="btn btn-default plus">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-col clearfix">
+        <div class="pic">
+          <img src="img/logo.jpg" alt="">
+        </div>
+        <div class="number-grid">
+          <div class="row">
+            <div class="col-xs-4 grid-element">
+              <button type="button" class="btn btn-default number">1</button>
+            </div>
+            <div class="col-xs-4 grid-element">
+              <button type="button" class="btn btn-default number">2</button>
+            </div>
+            <div class="col-xs-4 grid-element">
+              <button type="button" class="btn btn-default number">3</button>
+            </div>
+            <div class="col-xs-4 grid-element">
+              <button type="button" class="btn btn-default number">4</button>
+            </div>
+            <div class="col-xs-4 grid-element">
+              <button type="button" class="btn btn-default number">5</button>
+            </div>
+            <div class="col-xs-4 grid-element">
+              <button type="button" class="btn btn-default number">6</button>
+            </div>
+            <div class="col-xs-4 grid-element">
+              <button type="button" class="btn btn-default number">7</button>
+            </div>
+            <div class="col-xs-4 grid-element">
+              <button type="button" class="btn btn-default number">8</button>
+            </div>
+            <div class="col-xs-4 grid-element">
+              <button type="button" class="btn btn-default number">9</button>
+            </div>
+            <div class="col-xs-4 grid-element">
+              <button type="button" class="btn btn-default renitialiser">reinitialiser</button>
+            </div>
+            <div class="col-xs-4 grid-element">
+              <button type="button" class="btn btn-default number">0</button>
+            </div>
+            <div class="col-xs-4 grid-element">
+              <button type="button" class="btn btn-default clear">C</button>
+            </div>
+          </div>
+        </div>
+        <input name="number" type="text" class="number-input">
+        <div class="copy">
+          <button type="submit" class="copy-pic">
+            <img src="img/copy.jpg" alt="">
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
